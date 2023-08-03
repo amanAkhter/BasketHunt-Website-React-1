@@ -1,8 +1,11 @@
-# React + Vite
+# BasketHunt-Website-React-1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Information
+  This project is made for BasketHunt Pvt. Ltd. using React JS 
 
-Currently, two official plugins are available:
+`NOTE: It is just a frontend project no backend is used` 
+In this project `no external css libraries` or compilers are used and also `no react-libraries` are used 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Key-features
+1. The On load animation
+2. The animation on scroll in the progress-bar at bottom
