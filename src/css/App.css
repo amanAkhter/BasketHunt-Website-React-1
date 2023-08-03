@@ -1,0 +1,18 @@
+#main-area{
+    margin: 20px;
+}
+
+.content-sections{
+    margin: 120px 256.6px;
+}
+
+/* For the SVG on the right side of the website */
+#poly-svg{
+    width: 1056px;
+    height: 1112px;
+    z-index: 0;
+    top: 215px;
+    right: -600px;
+    position: absolute;
+    background-color: transparent;
+}

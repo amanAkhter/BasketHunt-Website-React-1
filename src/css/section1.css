@@ -1,0 +1,86 @@
+.section-one {
+  height: 453px;
+  width: 1111px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section-one {
+  height: 397px;
+  width: 496px;
+}
+
+.left-section-one > h1 {
+  font-weight: 700;
+  font-size: 64px;
+}
+
+/* Adding animation with a delay for the trail-following effect */
+
+.left-section-one :nth-child(1){
+  animation: load-content 1s ease-in-out;
+}
+
+.left-section-one :nth-child(2){
+  color: #ff7a3d;
+  animation: load-content 1s 0.2s ease-in-out;
+}
+
+.left-section-one :nth-child(3){
+  animation: load-content 1s 0.4s ease-in-out;
+}
+
+.left-section-one :nth-child(4){
+  animation: load-content 1s 0.6s ease-in-out;
+}
+
+.left-section-one :nth-child(5){
+  animation: load-content 1s 0.8s ease-in-out;
+}
+
+.left-section-one > p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.left-section-one > button {
+  margin-top: 30px;
+  padding: 2px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  border: 1px solid #ff7a3d;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.left-section-one > button:hover {
+  background-color: #ff7a3d;
+  color: white;
+}
+
+.right-section-one > img {
+  height: 453px;
+  width: 559px;
+  animation: load-img 1s ease-in-out;
+}
+
+/* Keyframes : for loading the image [comes from right] */
+@keyframes load-img {
+  from {
+    transform: translateX(200%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+
+/* Keyframes : for loading the content [comes from left] */
+@keyframes load-content {
+  from {
+    transform: translateX(-200%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}

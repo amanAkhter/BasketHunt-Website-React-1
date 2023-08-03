@@ -1,0 +1,118 @@
+.section-four {
+  height: 600px;
+  width: 1210px;
+  width: 1035px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-section-four {
+  height: 597.64px;
+  width: 532.16px;
+}
+
+.right-section-four > h1 {
+  font-weight: 700;
+  font-size: 30px;
+  width: 700px;
+}
+
+.right-section-four > hr {
+  margin-top: 30px;
+  border: none;
+  border-bottom: 1px solid #ff7a3d;
+}
+
+.right-section-four > p {
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.left-section-four > img {
+  height: 499px;
+  width: 499px;
+}
+
+.progress-bar-section > h2 {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 25px;
+  width: 700px;
+  color: gray;
+}
+
+/* A container for progress-bar */
+.progress-bar-container{
+  margin-top: 15px;
+  height: 20px;
+  width: inherit;
+  border: 1px solid gray;
+  border-radius: 20px;
+  position: relative;
+  padding: 10px;
+}
+
+/* GIVING DYNAMIC WIDTH TO EVERY PROGRESS-BAR */
+/* the animation will work accordingly for every progress-bar using the dynamic-width variable */
+
+#progress-bar-quarterly{
+  --dynamic-width : 90%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--dynamic-width);
+  min-width: 0rem;
+  max-width: calc(100% - 20px);
+  background-color: #ff7a3d;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#progress-bar-monthly{
+  --dynamic-width : 50%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--dynamic-width);
+  min-width: 0rem;
+  max-width: calc(100% - 20px);
+  background-color: #ff7a3d;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#progress-bar-daily{
+  --dynamic-width : 20%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--dynamic-width);
+  min-width: 0rem;
+  max-width: calc(100% - 20px);
+  background-color: #ff7a3d;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Making an animate class to add progress-bar animation */
+.animate{
+  animation: progress-bar-animation 1s ease-in-out;
+}
+
+/* Keyframes - animation for progress-bar */
+@keyframes progress-bar-animation {
+  from {
+    width: 0%;
+  }
+  to{
+    width: var(--dynamic-width);
+  }
+}
