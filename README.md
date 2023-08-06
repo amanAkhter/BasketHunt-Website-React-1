@@ -5,6 +5,7 @@
 
 `NOTE: It is just a frontend project no backend is used` 
 In this project `no external css libraries` or compilers are used and also `no react-libraries` are used 
+Completely custom css and animations using `IntersectionObserver`
 
 ### Key-features
 1. The On load animation
